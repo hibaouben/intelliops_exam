@@ -1,4 +1,4 @@
-CANAUX = {"CRITICAL": "TEAMS", "HIGH": "TEAMS", "MEDIUM": "EMAIL", "LOW": "DASHBOARD"}
+CANAUX = {"CRITICAL": "TEAMS", "HIGH": "DASHBOARD", "MEDIUM": "EMAIL", "LOW": "DASHBOARD"}
 def choisir_canal(criticite):
     if criticite not in CANAUX:
         raise ValueError(f"criticité inconnue : {criticite}")
